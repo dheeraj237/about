@@ -13,7 +13,8 @@
     <style type="text/css">
         #body {
             height: 100%;
-            background: url("fall_major_2016_loadscreen_3.png") no-repeat;
+            /* background: url("fall_major_2016_loadscreen_3.png") no-repeat; */
+            background: indigo;
             background-attachment: fixed;
             background-size: cover;
             overflow: hidden;
@@ -29,19 +30,6 @@
     <div id="app">
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-            <div class="mdl-layout__drawer">
-                <span class="mdl-layout-title">Photo Booth</span>
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="/photo-booth-pwa/">Feed</a>
-                    <a class="mdl-navigation__link" href="/photo-booth-pwa/help">Help</a>
-                    <div class="drawer-option">
-                        <button
-                            class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
-                            Enable Notifications
-                        </button>
-                    </div>
-                </nav>
-            </div>
             <main class="mdl-layout__content mat-typography">
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--12-col text-center">
@@ -73,7 +61,7 @@
             </main>
         </div>
     </div>
-    <script defer src="/photo-booth-pwa/src/js/material.min.js"></script>
+    <script defer src="/about/material.min.js"></script>
     <script>
         var diysrc = "none";
         window.wallpaperPropertyListener = {
@@ -92,8 +80,8 @@
                     var myComboValue = properties.customcombo.value;
                     if (myComboValue == "1") {
                         // alert(properties.diybg.value);
-                        var src = "fall_major_2016_loadscreen_3.png";
-                        document.body.style.background = 'url(' + src + ') no-repeat';
+                        // var src = "fall_major_2016_loadscreen_3.png";
+                        // document.body.style.background = 'url(' + src + ') no-repeat';
                     }
                     else if (myComboValue == "2") {
                         //alert(diysrc);
