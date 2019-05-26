@@ -1,0 +1,46 @@
+{
+	"description" : "canvas-nest鼠标跟随特效\n\n1.添加自定义背景，同时可以和默认背景切换 ——2017.01.02\n\n说明:这个背景是被基友安利入坑弄着玩的,找到特效没有什么好看的背景就从dota2载入随便挑了一张急急忙忙上传了。\n\n现在发现大家纷纷要求换背景,但是我真不知道换啥ORZ,所以中央已经决定了,由你来换背景图。\n\n又担心有人就喜欢原版背景，把我批判一番（喂，你内心戏有点多），最后决定多加一个切换的功能，这样是不是一颗赛艇多了？\n2017.01.12 \n因为一直在学校只能用自己1366*768的破笔记本,高分辨率实在没法测试,暂时解决下白边问题,自定义壁纸应该没有问题\n最后，有问题欢迎大家反馈(๑•̀ㅁ•́ฅ)",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"customcombo" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "默认背景",
+						"value" : 1
+					},
+					{
+						"label" : "自定义背景",
+						"value" : 2
+					}
+				],
+				"text" : "背景切换",
+				"type" : "combo",
+				"value" : 1
+			},
+			"diybg" : 
+			{
+				"text" : "自定义背景",
+				"type" : "file"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Game", "Technology" ],
+	"title" : "dota2秋季赛载入+特效",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 822045738
+}

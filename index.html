@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Dheeraj Suthar</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
+    <style type="text/css">
+        #body {
+            height: 100%;
+            background: url("fall_major_2016_loadscreen_3.png") no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: hidden;
+            color: white
+        }
+    </style>
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body id="body">
+    <div id="app">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Photo Booth</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="/photo-booth-pwa/">Feed</a>
+                    <a class="mdl-navigation__link" href="/photo-booth-pwa/help">Help</a>
+                    <div class="drawer-option">
+                        <button
+                            class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
+                            Enable Notifications
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <main class="mdl-layout__content mat-typography">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col text-center">
+                        <h1><strong>Dheeraj Suthar</strong></h1>
+                        <p>Software Engineer at Helios Web Services, Jaipur</p>
+                    </div>
+                </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col text-center">
+                        <h3>Contact Me!</h3>
+                        <div>
+                            <button onclick="window.location.href = 'tel:+919782181793'"
+                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                                <i class="material-icons">call</i>
+                            </button>
+                            <button onclick="window.location.href = 'mailto:dheerusuthar@gmail.com'"
+                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                                <i class="material-icons">email</i>
+                            </button>
+                            <button
+                                onclick="window.location.href = 'intent://send/9782181793#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end'"
+                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                                <!-- <i class="material-icons">chat_bubble</i> -->
+                                <i class="fa fa-whatsapp fa_custom fa-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script defer src="/photo-booth-pwa/src/js/material.min.js"></script>
+    <script>
+        var diysrc = "none";
+        window.wallpaperPropertyListener = {
+            applyUserProperties: function (properties) {
+
+                if (properties.diybg) {
+                    //alert(properties.diybg.value);
+                    if (properties.diybg.value) {
+                        diysrc = "file:///" + properties.diybg.value;
+                        document.body.style.background = 'url(' + diysrc + ') no-repeat';
+
+                    }
+                }
+                if (properties.customcombo) {
+
+                    var myComboValue = properties.customcombo.value;
+                    if (myComboValue == "1") {
+                        // alert(properties.diybg.value);
+                        var src = "fall_major_2016_loadscreen_3.png";
+                        document.body.style.background = 'url(' + src + ') no-repeat';
+                    }
+                    else if (myComboValue == "2") {
+                        //alert(diysrc);
+                        if (diysrc != "none") {
+                            document.body.style.background = 'url(' + diysrc + ') no-repeat';
+                        }
+
+                    }
+                }
+
+            }
+        };
+    </script>
+    <script color="255,251,240" opacity='0.9' zindex="-2" count="200" src="canvas-nest.js"></script>
+
+</body>
+
+</html>
