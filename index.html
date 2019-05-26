@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style type="text/css">
         #body {
-            height: 100%;
+            /* height: 100%; */
             /* background: url("fall_major_2016_loadscreen_3.png") no-repeat; */
             background: indigo;
-            background-attachment: fixed;
+            /* background-attachment: fixed;
             background-size: cover;
-            overflow: hidden;
+            overflow: hidden; */
             color: white
         }
     </style>
@@ -27,41 +28,43 @@
 </head>
 
 <body id="body">
-    <div id="app">
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <h1 class="header center">Dheeraj Suthar</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Software Engineer @ Helios Web Services, Jaipur</h5>
+            </div>
+            <br><br>
+            <div class="row center">
+                <!-- <a href="http://materializecss.com/getting-started.html"
+                    class="btn-large waves-effect waves-light teal lighten-1">Get Started</a> -->
+                <h3>Contact Me!</h3>
+                <div>
+                    <button onclick="window.location.href = 'tel:+919782181793'"
+                        class="mdl-button waves-effect waves-light mdl-js-button mdl-button--fab mdl-button--colored">
+                        <i class="material-icons">call</i>
+                    </button>&nbsp;&nbsp;
+                    <button onclick="window.location.href = 'mailto:dheerusuthar@gmail.com'"
+                        class="mdl-button waves-effect waves-light mdl-js-button mdl-button--fab mdl-button--colored">
+                        <i class="material-icons">email</i>
+                    </button>&nbsp;&nbsp;
+                    <button onclick="window.location.href = 'mailto:dheerusuthar@gmail.com'"
+                        class="mdl-button waves-effect waves-light mdl-js-button mdl-button--fab mdl-button--colored">
+                        <i class="material-icons">email</i>
+                    </button>&nbsp;&nbsp;
+                    <button onclick="window.location.href = 'https://www.linkedin.com/in/dheeraj726/'"
+                        class="mdl-button waves-effect waves-light mdl-js-button mdl-button--fab mdl-button--colored">
+                        <!-- <i class="material-icons">chat_bubble</i> -->
+                        <i class="fa fa-linkedin fa_custom fa-1x"></i>
+                    </button>
+                </div>
+            </div>
+            <br><br>
 
-            <main class="mdl-layout__content mat-typography">
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--12-col text-center">
-                        <h1><strong>Dheeraj Suthar</strong></h1>
-                        <p>Software Engineer at Helios Web Services, Jaipur</p>
-                    </div>
-                </div>
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--12-col text-center">
-                        <h3>Contact Me!</h3>
-                        <div>
-                            <button onclick="window.location.href = 'tel:+919782181793'"
-                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                                <i class="material-icons">call</i>
-                            </button>
-                            <button onclick="window.location.href = 'mailto:dheerusuthar@gmail.com'"
-                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                                <i class="material-icons">email</i>
-                            </button>
-                            <button
-                                onclick="window.location.href = 'intent://send/9782181793#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end'"
-                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-                                <!-- <i class="material-icons">chat_bubble</i> -->
-                                <i class="fa fa-whatsapp fa_custom fa-2x"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </main>
         </div>
     </div>
-    <script defer src="/about/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         var diysrc = "none";
         window.wallpaperPropertyListener = {
